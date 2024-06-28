@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 100%;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("img2.jpg");
+            font-family: "Rubik", sans-serif;
+        }
+        .main{
+            height: 500px;
+            width: 420px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 150px;
+            backdrop-filter: blur(4px);
+        }
+        .head{
+            color: whitesmoke;
+            text-align: center;
+            margin: 30px;
+        }
+        input{
+            margin-top: 30px;
+            margin-left: 30px;
+            height: 40px;
+            width: 320px;
+            border: 1px solid whitesmoke;
+            backdrop-filter: blur(2px);
+            border-radius: 20px;
+            padding-left: 30px;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            backdrop-filter: blur(5px); /* Blur effect */
+            color: whitesmoke;
+        }
+        input::placeholder{
+            color: whitesmoke;
+        }
+        .bottom{
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .bottom label {
+            color: whitesmoke;
+            font-size: 16px;
+            margin-left: 10px; /* Adjusted margin for label */
+        }
+        button{
+            margin-top: 40px;
+            height: 40px;
+            width: 350px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Login</h1>
+        </div>
+        <div class="body">
+            <input type="text" name="username" id="username" placeholder="Username" >
+            <br>
+            <input type="text" name="username" id="username" placeholder="Password">
+        </div>
+        <br>
+        <a style="margin-left: 242px; text-decoration: none; color: whitesmoke;" href="">Forgot password?</a>
+        <div class="bottom">
+            <button type="submit">Login</button>
+        </div>
+        <br>
+        <p style="text-align: center; font-size: 18px; color:#ded9d9">Don't have an account?<span> <a style="color: white; text-decoration: none;" href="">Register</a></span></p>
+
+
+    </div>
+    
+</body>
+</html>
